@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muskan's Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MAIN CONTAINER -->
+    <div class="clock-container">
+      <!-- HEADING -->
+      <div class="clock-heading">
+        <h3>Muskan's Clock</h3>
+        <span class="clock-time" id="clock-time">12 : 00 : 00 AM</span>
+      </div>
+
+      <!-- TIME SELECTION CONTAINER -->
+      <div class="clock-inner">
+        <!-- ALARM TIME SELECTION -->
+        <div class="select-time" id="select-time">
+          <select name="selectHours" id="select-hours">
+            <option id="hour" hidden>12</option>
+          </select>
+          <label for="selectMinutes">:</label>
+          <select name="selectMinutes" id="select-minutes">
+            <option id="minute" hidden>00</option>
+          </select>
+          <label for="selectSeconds">:</label>
+          <select name="selectSeconds" id="select-seconds">
+            <option id="second" hidden>00</option>
+          </select>
+          <label for="selectAM_PM"></label>
+          <select name="selectAM_PM" id="select-am_pm">
+            <option id="am_pm" hidden>AM</option>
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
+        <!-- ALARM BUTTON -->
+        <div class="set-alarm-button">
+          <button type="button" id="set-alarm">SET ALARM</button>
+        </div>
+      </div>
+
+      <!-- LIST OF ALL THE ALARMS -->
+      <div class="alarms-section">
+        <p class="alarms-label">Alarms</p>
+        <div class="alarms-list" id="alarms-list">
+          <div id="no-alarm">NO ALARMS SET AT THE MOMENT </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

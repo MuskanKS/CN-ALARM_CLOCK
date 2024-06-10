@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, rgb(70, 15, 209), rgb(12, 4, 28));
+}
+
+.clock-container {
+  width: 400px;
+  margin: 4px;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 40px;
+  background: linear-gradient(to bottom right, rgb(252, 252, 252), rgb(9, 1, 1));
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.clock-heading h3, .alarms-label {
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+  color: #333;
+  font-size: 24px;
+}
+
+#clock-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-shadow: 0 0 4px #bdc3c7;
+}
+
+#select-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #2c3e50;
+  font-size: 22px;
+}
+
+#select-time select {
+  margin: 4px;
+  padding: 8px;
+  color: darkslategray;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.clock-inner div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#set-alarm {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, rgb(70, 15, 209), rgb(12, 4, 28));
+  text-shadow: 0 0 4px #2980b9;
+}
+
+.alarms-section {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #bdc3c7;
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 2px #7f8c8d;
+}
+
+#alarms-list {
+  height: 200px;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px #bdc3c7;
+}
+
+.alarms-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 20px;
+  background: linear-gradient(to bottom right, #ecf0f1, rgb(9, 1, 1));
+  border-radius: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  border: 5px solid red;
+  border-radius: 6px;
+  background-color: red;
+}
+
+#no-alarm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 18px;
+}
